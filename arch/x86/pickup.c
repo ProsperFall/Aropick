@@ -1,6 +1,8 @@
 #include <efi.h>
 
+efi_status_t (*system)();
 
-int main() {
+efi_status_t main() {
 
+    return EFI_SUCCESS;
 }

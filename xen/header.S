@@ -1,3 +1,4 @@
+//  xen direct boot
 ELFNOTE(Xen, XEN_ELFNOTE_GUEST_OS,       .asciz, "osname")
 ELFNOTE(Xen, XEN_ELFNOTE_GUEST_VERSION,  .asciz, __XSTRING(__FreeBSD_version))
 ELFNOTE(Xen, XEN_ELFNOTE_XEN_VERSION,    .asciz, "xen-3.0")

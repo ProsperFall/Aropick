@@ -8,4 +8,12 @@ typedef __u32 u32;
 typedef __s64 s64;
 typedef __u64 u64;
 
-typedef s8* wsting;
+typedef s8* string_t;
+typedef s16* wstring_t;
+
+typedef struct {
+  u32    data1;
+  u16    data2;
+  u16    data3;
+  u16    data4[8];
+} guid;
