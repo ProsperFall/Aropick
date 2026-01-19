@@ -8,16 +8,24 @@ static efi_system_table_t system_table = {
 		.crc32		= 0,
 		.reserved	= 0
 	},
-	.fw_vendor	= EFI_INVALID_TABLE_ADDR,
-	.fw_revision	= 0,
+	.fw_vendor	    =  EFI_INVALID_TABLE_ADDR,
+	.fw_revision	=  0,
 	.con_in_handle	= EFI_INVALID_TABLE_ADDR,
-	.con_in		= nullptr,
+	.con_in		    = nullptr,
 	.con_out_handle	= EFI_INVALID_TABLE_ADDR,
-	.con_out	= nullptr,
+	.con_out	    = nullptr,
 	.stderr_handle	= EFI_INVALID_TABLE_ADDR,
-	.stderr		= EFI_INVALID_TABLE_ADDR,
-	.runtime	= (efi_runtime_services_t *)EFI_INVALID_TABLE_ADDR,
-	.boottime	= (efi_boot_services_t *)EFI_INVALID_TABLE_ADDR,
-	.nr_tables	= 0,
-	.tables		= EFI_INVALID_TABLE_ADDR
+	.stderr		    = EFI_INVALID_TABLE_ADDR,
+	.runtime	    = EFI_INVALID_TABLE_ADDR,
+	.boottime	    = EFI_INVALID_TABLE_ADDR,
+	.nr_tables	    = 0,
+	.tables		    = EFI_INVALID_TABLE_ADDR
 };
+
+static void build_system_table() {
+    system_table;
+}
+
+void xen_efi_init() {
+
+}

@@ -1,3 +1,4 @@
+#define INVALID_ADDRESS 0xFFFFFFFFFFFFFFFFUL
 typedef __signed__ char __s8;
 typedef unsigned char __u8;
 
