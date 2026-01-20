@@ -1,0 +1,17 @@
+CompileFlags:
+  Add:
+    - -x
+    - c
+    - --include=*.c
+    - --include=*.h
+
+    - -x
+    - c++
+    - --include=*.cc
+    - --include=*.cpp
+    - --include=*.hpp
+
+    - -iquote=includes
+    - -isystem=includes
+    - -nostdinc
+    - -nostdinc++

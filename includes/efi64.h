@@ -59,8 +59,8 @@
 #define EFI_2_00_SYSTEM_TABLE_REVISION      ((2<<16)|(00))
 #define EFI_1_10_SYSTEM_TABLE_REVISION      ((1<<16)|(10))
 #define EFI_1_02_SYSTEM_TABLE_REVISION      ((1<<16)|(02))
-#define EFI_SPECIFICATION_VERSION EFI_SYSTEM_TABLE_REVISION
 #define EFI_SYSTEM_TABLE_REVISION EFI_2_100_SYSTEM_TABLE_REVISION
+#define EFI_SPECIFICATION_VERSION EFI_SYSTEM_TABLE_REVISION
 
 typedef enum {
     AllocateAnyPages,
@@ -91,7 +91,7 @@ typedef enum {
 
 typedef u64 efi_status_t;
 
-typedef guid efi_guid_t;
+typedef guid_t efi_guid_t;
 
 typedef void* efi_handle_t;
 typedef void* efi_event_t;

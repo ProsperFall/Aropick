@@ -16,4 +16,4 @@ typedef struct {
   u16    data2;
   u16    data3;
   u16    data4[8];
-} guid;
+} guid_t;
