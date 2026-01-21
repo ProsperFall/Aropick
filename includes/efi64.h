@@ -62,6 +62,20 @@
 #define EFI_SYSTEM_TABLE_REVISION EFI_2_100_SYSTEM_TABLE_REVISION
 #define EFI_SPECIFICATION_VERSION EFI_SYSTEM_TABLE_REVISION
 
+#define EFI_NETWORK_UNREACHABLE   ((100) | (1UL << 63))
+#define EFI_HOST_UNREACHABLE      ((101) | (1UL << 63))
+#define EFI_PROTOCOL_UNREACHABLE  ((102) | (1UL << 63))
+#define EFI_PORT_UNREACHABLE      ((103) | (1UL << 63))
+
+#define EFI_CONNECTION_FIN      ((104) | (1UL << 63))
+#define EFI_CONNECTION_RESET    ((105) | (1UL << 63))
+#define EFI_CONNECTION_REFUSED  ((106) | (1UL << 63))
+/*
+#define EFI_PAGE_SIZE   4096
+#define EFI_PAGE_MASK   0xFFF
+#define EFI_PAGE_SHIFT  12
+*/
+
 typedef enum {
   AllocateAnyPages,
   AllocateMaxAddress,

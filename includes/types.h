@@ -17,3 +17,16 @@ typedef struct {
   u16    data3;
   u16    data4[8];
 } guid_t;
+
+typedef struct {
+  u8  addr[4];
+} ipv4_addr_t;
+
+
+typedef struct {
+  u8  addr[16];
+} ipv6_addr_t;
+
+typedef struct {
+  u8  addr[32];
+} mac_addr_t;
